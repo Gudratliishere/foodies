@@ -9,7 +9,7 @@ export default function MainHeader() {
     return <>
         <MainHeaderBackground/>
         <header className={styles.header}>
-            <Link href="/public" className={styles.logo}>
+            <Link href="/" className={styles.logo}>
                 <Image src={logoImg} alt="NextLevel Food" priority/>
                 NextLevel Food
             </Link>
