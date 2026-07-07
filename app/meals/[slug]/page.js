@@ -3,6 +3,11 @@ import Image from "next/image";
 import {getMeal, getMeals} from "@/lib/meals";
 import {notFound} from "next/navigation";
 
+export const metadata = {
+  title: 'All Meals',
+  description: 'Browse a delicious meals shared by our vibrant community.',
+};
+
 export default function MealPage({ params }) {
   const meal = getMeal(params.slug);
 
